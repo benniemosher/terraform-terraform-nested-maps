@@ -1,8 +1,10 @@
 variable "map" {
-  type = map(string)
+  description = "A map of resource names and element names"
+  type        = map(string)
 }
 
 variable "replace" {
+  description = "A map of information for string replacement"
   type = map(object({
     string_find    = string
     string_replace = map(string)
@@ -15,5 +17,6 @@ locals {
 }
 
 output "map" {
-  value = zipmap(local.keys, local.values)
+  description = "A map to use in a for_each loop"
+  value       = zipmap(local.keys, local.values)
 }
