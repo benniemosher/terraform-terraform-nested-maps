@@ -1,4 +1,4 @@
-# terraform-nested-maps
+# terraform-terraform-nested-maps
 
 A small Terraform module to build a nested map to use with`for_each` resource declarations.
 
