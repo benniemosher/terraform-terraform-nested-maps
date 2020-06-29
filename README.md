@@ -14,13 +14,13 @@ No provider.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| map | n/a | `map(string)` | n/a | yes |
-| replace | n/a | <pre>map(object({<br>    string_find    = string<br>    string_replace = map(string)<br>  }))</pre> | n/a | yes |
+| map | A map of resource names and element names | `map(string)` | n/a | yes |
+| replace | A map of information for string replacement | <pre>map(object({<br>    string_find    = string<br>    string_replace = map(string)<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| map | n/a |
+| map | A map to use in a for\_each loop |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
