@@ -14,8 +14,8 @@ No provider.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| map | n/a | `any` | n/a | yes |
-| replace | n/a | `any` | n/a | yes |
+| map | n/a | `map(string)` | n/a | yes |
+| replace | n/a | <pre>map(object({<br>    string_find    = string<br>    string_replace = map(string)<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 
