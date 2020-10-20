@@ -1,5 +1,7 @@
 # terraform-terraform-nested-maps
 
+[![Youtube Video](http://img.youtube.com/vi/q4XHV8eKOTk/0.jpg)](http://www.youtube.com/watch?v=q4XHV8eKOTk "Youtube Video")
+
 A small Terraform module to build a nested map to use with`for_each` resource declarations.
 
 I wanted to condence 100+ lines of remote data sources to pull in resources, and I wanted to utilize the new `for_each` feature.
